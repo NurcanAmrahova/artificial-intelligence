@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// komponentler buraya gelecek
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About'
+import Services from './pages/Services';
+import Blogs from './pages/Blogs';
+import NotFound from './pages/NotFound';
+// React Router DOM
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+
+  <BrowserRouter>
+  < div className='Wrapper'>
+      <Navbar />
+      </div>
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>} />
+      <Route path='/services' element={<Services/>}/>
+      <Route path='/blogs' element={<Blogs/>}/>
+      <Route path="*" element={<NotFound/>}/>
+      </Routes>
+  
+     <Footer/>
+  </BrowserRouter>
+  </>
   );
 }
 

@@ -1,0 +1,30 @@
+
+.left-side p{
+    font-size:18px;
+    color:#3A68B8;
+    font-weight:600;
+}
+.left-side small{
+    color:#FFF;
+    opacity:.7;
+    
+}
+.left-side h1{
+    color:#FFF;
+    padding-bottom: 50px;
+}
+.left-side{
+    padding-top:193px;
+}
+.right-side{
+    padding-top:88px;
+}
+.buttons{
+    padding-top:50px;
+}
+.string{
+    display: flex;
+    font-size:40px;
+    color:white;
+    padding-bottom: 50px;
+}

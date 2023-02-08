@@ -1,0 +1,44 @@
+body{
+    background-color: #222;
+    font-family: 'Open Sans', sans-serif;
+}
+.bars{
+    color:white;
+    transform:scale(2)
+}
+.cross-icon{
+    color:white;
+    cursor: pointer;
+}
+.overlay{
+    background-color: rgba(0,0,0,.9);
+    position:fixed;
+    height:100vh;
+    z-index:2;
+    width:0;
+    top:0;
+    right:0;
+    overflow-x:hidden;
+
+    
+}
+.aktiv{
+    width:100%;
+}
+.nav-links{
+    font-size:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    
+}
+.nav-links a{
+    text-decoration: none;
+}
+.cross-icon{
+    position:absolute;
+    right:45px;
+    top:50px;
+}
